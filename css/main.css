@@ -1,0 +1,55 @@
+/*//////////////////////////////////////////////////////////
+// Utils
+//////////////////////////////////////////////////////////*/
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+/*//////////////////////////////////////////////////////////
+// Setup
+//////////////////////////////////////////////////////////*/
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+img {
+  max-width: 100%;
+}
+
+/*//////////////////////////////////////////////////////////
+// Styles
+//////////////////////////////////////////////////////////*/
+.content {
+  display: block;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.title {
+  margin-bottom: 50px; 
+}
+.logo {
+  float: left;
+  width: 50%;
+}
+a.logo {
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 100%;
+  padding-bottom: 100%;
+}
+.logo + .logo {
+  margin-left: 5%;
+}
+.jlogo, .rlogo {
+}
