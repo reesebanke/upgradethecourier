@@ -33,6 +33,7 @@ img {
 .logo {
   width: 50%;
   display: inline-block;
+  margin-bottom: 30px;
 }
 a.logo {
   width: 20%;
@@ -45,5 +46,15 @@ a.logo:hover {
 .logo + .logo {
   margin-left: 5%;
 }
-.jlogo, .rlogo {
+.arrow-container {
+  width: 20%;
+  float: left;
+}
+.arrow-container:last-of-type {
+  float: right;
+}
+.arrow {
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
