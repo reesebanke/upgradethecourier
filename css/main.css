@@ -2,18 +2,6 @@
 // Utils
 //////////////////////////////////////////////////////////*/
 
-/* http://nicolasgallagher.com/micro-clearfix-hack/ */
-.cf:before, .cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
-.cf {
-  *zoom: 1;
-}
-
 /*//////////////////////////////////////////////////////////
 // Setup
 //////////////////////////////////////////////////////////*/
@@ -38,15 +26,19 @@ img {
 .title {
   margin-bottom: 50px; 
 }
+.logos {
+  display: flex;
+  align-items: center;
+}
 .logo {
-  float: left;
   width: 50%;
+  display: inline-block;
 }
 a.logo {
-  display: inline-block;
   width: 20%;
-  margin-bottom: 100%;
-  padding-bottom: 100%;
+}
+a.logo:hover {
+  
 }
 .logo + .logo {
   margin-left: 5%;
