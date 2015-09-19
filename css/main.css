@@ -36,9 +36,11 @@ img {
 }
 a.logo {
   width: 20%;
+  border-bottom: solid white 10px;
+  transition: border-bottom 1s ease;
 }
 a.logo:hover {
-  
+  border-bottom: solid black 10px;
 }
 .logo + .logo {
   margin-left: 5%;
